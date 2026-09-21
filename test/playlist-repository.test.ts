@@ -6,10 +6,10 @@ const first: StoredTrack = {
   identifier: 'first',
   title: 'First',
   author: 'Artist',
-  uri: 'https://open.spotify.com/track/first',
+  uri: 'https://music.youtube.com/watch?v=first',
   artworkUrl: null,
   lengthMs: 1000,
-  sourceName: 'spotify',
+  sourceName: 'youtube',
 };
 
 describe('PlaylistRepository', () => {

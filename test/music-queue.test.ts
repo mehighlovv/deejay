@@ -8,10 +8,10 @@ function track(title: string): MusicTrack {
     identifier: title,
     title,
     author: 'Artist',
-    uri: `https://open.spotify.com/track/${title}`,
+    uri: `https://music.youtube.com/watch?v=${title}`,
     artworkUrl: null,
     lengthMs: 180_000,
-    sourceName: 'spotify',
+    sourceName: 'youtube',
     requestedBy: 'user',
   };
 }

@@ -26,7 +26,7 @@ or collect your Discord password.
 ### Music and playlist information
 
 We process song searches and music metadata, which may include track titles,
-artists, artwork URLs, source identifiers, durations, and Spotify URLs. Saved
+artists, artwork URLs, source identifiers, durations, and YouTube URLs. Saved
 playlists associate this information with your Discord user ID and server ID.
 
 ### Technical information
@@ -74,9 +74,8 @@ only as needed to operate the Bot:
 
 - **Discord** delivers interactions, user and server identifiers, and voice
   connection events.
-- **Spotify** receives music-search requests and supplies music metadata.
-- **YouTube, SoundCloud, and Lavalink providers** may receive track identifiers
-  or search terms to resolve playable audio.
+- **YouTube and Lavalink providers** may receive music searches, track
+  identifiers, or URLs to supply metadata and resolve playable audio.
 - **Hosting and infrastructure providers** may process database records and
   logs on our behalf.
 

@@ -6,8 +6,6 @@ describe('loadConfig', () => {
     const config = loadConfig({
       DISCORD_TOKEN: 'test-token',
       DISCORD_CLIENT_ID: 'test-client',
-      SPOTIFY_CLIENT_ID: 'test-spotify-client',
-      SPOTIFY_CLIENT_SECRET: 'test-spotify-secret',
     });
     expect(config.LAVALINK_HOST).toBe('localhost');
     expect(config.LAVALINK_PORT).toBe(2333);

@@ -10,7 +10,7 @@ const playlistName = (option: SlashCommandStringOption): SlashCommandStringOptio
 export const commandData = [
   new SlashCommandBuilder()
     .setName('play')
-    .setDescription('Play a Spotify song or add it to the queue')
+    .setDescription('Play a YouTube song or add it to the queue')
     .addStringOption((option) =>
       option
         .setName('song')
@@ -47,7 +47,7 @@ export const commandData = [
     .addSubcommand((command) =>
       command
         .setName('add')
-        .setDescription('Add a Spotify song to a playlist')
+        .setDescription('Add a YouTube song to a playlist')
         .addStringOption(playlistName)
         .addStringOption((option) =>
           option

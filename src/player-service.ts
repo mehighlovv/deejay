@@ -37,9 +37,9 @@ export class PlayerService {
     const node = this.lavalink.getIdealNode();
     if (!node) throw new Error('The audio server is not ready. Try again shortly.');
 
-    const result = await node.rest.resolve(`spsearch:${query}`);
+    const result = await node.rest.resolve(`ytsearch:${query}`);
     if (!result || result.loadType === LoadType.EMPTY) {
-      throw new Error(`No Spotify result found for "${query}".`);
+      throw new Error(`No YouTube result found for "${query}".`);
     }
     if (result.loadType === LoadType.ERROR) throw new Error(result.data.message);
 
@@ -49,14 +49,17 @@ export class PlayerService {
         : result.loadType === LoadType.PLAYLIST
           ? result.data.tracks[0]
           : result.data[0];
-    if (!track) throw new Error(`No Spotify result found for "${query}".`);
+    if (!track) throw new Error(`No YouTube result found for "${query}".`);
     return this.toMusicTrack(track, requestedBy);
   }
 
   async resolveStored(track: StoredTrack, requestedBy: string): Promise<MusicTrack> {
     const node = this.lavalink.getIdealNode();
     if (!node) throw new Error('The audio server is not ready. Try again shortly.');
-    const identifier = track.uri ?? `spsearch:${track.title} ${track.author}`;
+    const identifier =
+      track.sourceName === 'youtube' && track.uri
+        ? track.uri
+        : `ytsearch:${track.title} ${track.author}`;
     const result = await node.rest.resolve(identifier);
     if (!result || result.loadType === LoadType.EMPTY || result.loadType === LoadType.ERROR) {
       throw new Error(`Could not resolve "${track.title}" for playback.`);

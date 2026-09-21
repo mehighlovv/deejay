@@ -17,10 +17,9 @@ authority to accept these Terms on its behalf.
 
 ## 2. The Service
 
-Deejay lets Discord users search for music, manage playback and queues, use
-interactive playback controls, and create persistent playlists. Spotify is used
-for search and music metadata. Audio may be resolved and played through
-third-party sources such as YouTube or SoundCloud using Lavalink.
+Deejay lets Discord users search YouTube, manage playback and queues, use
+interactive playback controls, and create persistent playlists. Audio is
+resolved and played through YouTube using Lavalink.
 
 Features may change, be suspended, or be discontinued at any time. We do not
 guarantee uninterrupted, error-free, or permanent availability.
@@ -35,18 +34,18 @@ You agree not to:
 - bypass access controls, rate limits, or security measures;
 - use automated means to spam commands or degrade service for others;
 - submit malicious, deceptive, unlawful, or harmful content; or
-- use the Bot in a way that violates Discord's, Spotify's, YouTube's,
-  SoundCloud's, or another provider's applicable terms.
+- use the Bot in a way that violates Discord's, YouTube's, or another
+  provider's applicable terms.
 
 Server administrators are responsible for managing who can access the Bot in
 their server and for ensuring that its use follows applicable rules.
 
 ## 4. Third-Party Services and Content
 
-Deejay depends on services operated by third parties, including Discord,
-Spotify, YouTube, and SoundCloud. Their terms and privacy policies apply when
-you use their services. We do not control or endorse third-party content and
-are not responsible for its availability, accuracy, legality, or licensing.
+Deejay depends on services operated by third parties, including Discord and
+YouTube. Their terms and privacy policies apply when you use their services. We
+do not control or endorse third-party content and are not responsible for its
+availability, accuracy, legality, or licensing.
 
 You are responsible for ensuring that your use of music and other content is
 lawful in your location. Deejay does not grant you ownership of, or a license

@@ -13,8 +13,6 @@ const schema = z.object({
     (value) => (value === '' ? undefined : value),
     z.string().min(1).optional(),
   ),
-  SPOTIFY_CLIENT_ID: z.string().min(1),
-  SPOTIFY_CLIENT_SECRET: z.string().min(1),
   LAVALINK_HOST: z.string().min(1).default('localhost'),
   LAVALINK_PORT: z.coerce.number().int().positive().default(2333),
   LAVALINK_PASSWORD: z.string().min(1).default('change-me'),

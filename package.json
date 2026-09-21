@@ -1,7 +1,7 @@
 {
   "name": "deejay",
   "version": "0.1.0",
-  "description": "A Spotify-powered Discord music bot with persistent playlists",
+  "description": "A YouTube-powered Discord bot with persistent playlists",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
@@ -20,7 +20,7 @@
   "keywords": [
     "discord",
     "music",
-    "spotify",
+    "youtube-music",
     "lavalink"
   ],
   "author": "",

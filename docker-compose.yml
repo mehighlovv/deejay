@@ -1,11 +1,12 @@
 services:
   lavalink:
-    image: ghcr.io/lavalink-devs/lavalink:4-alpine
+    build:
+      context: .
+      dockerfile: lavalink/Dockerfile
+    image: deejay-lavalink:local
     restart: unless-stopped
     environment:
-      LAVALINK_SERVER_PASSWORD: ${LAVALINK_PASSWORD:-change-me}
-      SPOTIFY_CLIENT_ID: ${SPOTIFY_CLIENT_ID}
-      SPOTIFY_CLIENT_SECRET: ${SPOTIFY_CLIENT_SECRET}
+      LAVALINK_SERVER_PASSWORD: ${LAVALINK_PASSWORD}
     volumes:
       - ./lavalink/application.yml:/opt/Lavalink/application.yml:ro
     ports:
